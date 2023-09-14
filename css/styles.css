@@ -58,8 +58,8 @@ input {
 .cards .card{
 
     position:absolute;
-    width: 300px;
-    height: 500px;
+    width: 200px;
+    height: 400px;
     background-color: #323444;
     border-radius: 10px;
     padding: 30px 35px;
@@ -86,8 +86,8 @@ input {
     border-radius: 5px;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
     /* margin-top: -23; */
-    width: 95%;
-    height: 80%;
+    width: 110%;
+    height: 130%;
     object-fit: cover;
 }
 
@@ -187,6 +187,7 @@ input {
 #s3:checked~.cards #slide1,
 #s4:checked~.cards #slide2,
 #s5:checked~.cards #slide3 {
+    
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
     --current-color1: #ECEAED;
@@ -198,6 +199,7 @@ input {
 #s3:checked~.cards #slide2,
 #s4:checked~.cards #slide3,
 #s5:checked~.cards #slide4 {
+
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
     --current-color1: #ECEAED;
@@ -209,6 +211,7 @@ input {
 #s3:checked~.cards #slide3,
 #s4:checked~.cards #slide4,
 #s5:checked~.cards #slide5 {
+
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
     --current-color1: #fad00c;
@@ -220,6 +223,7 @@ input {
 #s3:checked~.cards #slide4,
 #s4:checked~.cards #slide5,
 #s5:checked~.cards #slide1 {
+
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(35%, 0, -120px);
     --current-color1: #ECEAED;
@@ -231,6 +235,7 @@ input {
 #s3:checked~.cards #slide5,
 #s4:checked~.cards #slide1,
 #s5:checked~.cards #slide2 {
+
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
     --current-color1: #ECEAED;
