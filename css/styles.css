@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;600;700&display=swap');
 
 body {
 
@@ -32,6 +32,7 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: +11%;
 }
 
 .cards {
@@ -57,9 +58,8 @@ input {
 
 .cards .card{
 
-    position:absolute;
-    width: 200px;
-    height: 400px;
+    position:relative;
+    height: 100%;
     background-color: #323444;
     border-radius: 10px;
     padding: 30px 35px;
@@ -85,9 +85,9 @@ input {
 
     border-radius: 5px;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
-    /* margin-top: -23; */
-    width: 110%;
-    height: 130%;
+    margin-top: -23;
+    width: 86%;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -241,3 +241,55 @@ input {
     --current-color1: #ECEAED;
     --current-color2: #404457;
 }
+
+/* Стили для экранов шириной 600px и меньше (мобильные устройства) */
+@media screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+    }
+  
+    .cards {
+      width: 60%;
+    }
+  
+    .cards label {
+      width: 100%;
+    }
+  
+    .card .image video {
+      height: auto;
+    }
+  
+    .card .image img,
+    .card .image video {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .infos .name {
+      padding-left: 0;
+    }
+  }
+  
+  /* Стили для экранов шириной от 601px до 1024px (планшеты) */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .cards {
+      width: 80%;
+    }
+  }
+  
+  /* Стили для экранов шириной более 1024px (настольные компьютеры) */
+  @media screen and (min-width: 1025px) {
+    .container {
+      max-width: 80%;
+    }
+  
+    .cards {
+      width: 70%;
+    }
+  }
+  
